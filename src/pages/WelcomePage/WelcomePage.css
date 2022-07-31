@@ -1,0 +1,9 @@
+.background {
+  height: 4000px;
+  background-color: red;
+}
+
+.text {
+  margin-top: 500px;
+  font-size: 128px;
+}
