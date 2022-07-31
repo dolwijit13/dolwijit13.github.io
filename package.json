@@ -2,6 +2,10 @@
   "name": "github-pages",
   "version": "0.1.2",
   "dependencies": {
+    "@chakra-ui/react": "^2.2.4",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "framer-motion": "^6.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "web-vitals": "^2.1.4"
@@ -12,7 +16,8 @@
     ]
   },
   "devDependencies": {
-    "typescript": "latest",
-    "react-refresh": "0.10.0"
+    "bun-types": "^0.1.5",
+    "react-refresh": "0.10.0",
+    "typescript": "latest"
   }
 }
