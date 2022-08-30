@@ -1,0 +1,13 @@
+.templateBackground {
+  display: flex;
+  height: 100%;
+}
+
+.templateLeftChild {
+  width: 34vw;
+  background-color: aqua;
+}
+
+.templateRightChild {
+  width: 66vw;
+}

@@ -1,3 +1,7 @@
 .appBackground {
   overflow-x: hidden;
 }
+
+.appContent {
+  margin-top: 96px;
+}

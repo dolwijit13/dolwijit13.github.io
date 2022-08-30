@@ -1,6 +1,6 @@
 .educationPageBackground {
   background-color: #31f;
-  height: 100vh;
+  height: calc(100vh - 96px);
   width: 100vw;
 }
 

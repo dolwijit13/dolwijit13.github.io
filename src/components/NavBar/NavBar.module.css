@@ -1,11 +1,11 @@
-@font-face {
-  font-family: 'MyFont';
-  src: url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap');
-}
-
 .navBarBackground {
   height: 96px;
   display: flex;
+  justify-content: flex-end;
+  padding-right: 2vw;
+  position: fixed;
+  width: 100%;
+  background: white
 }
 
 .navBarMenu {
@@ -15,5 +15,6 @@
   display: flex;
   align-items: center;
   font-family: 'Prompt';
+  cursor: pointer;
 }
 

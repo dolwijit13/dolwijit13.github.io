@@ -1,6 +1,6 @@
 .homePageBackground {
   background-color: #b17;
-  height: 100vh;
+  height: calc(100vh - 96px);
   width: 100vw;
 }
 
