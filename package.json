@@ -37,6 +37,7 @@
     ]
   },
   "scripts": {
-    "deploy": "gh-pages -d public"
+    "predeploy": "bun react-scripts build",
+    "deploy": "gh-pages -d build"
   }
 }
