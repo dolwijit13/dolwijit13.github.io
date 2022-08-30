@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap');
+}
+
+.navBarBackground {
+  height: 96px;
+  display: flex;
+}
+
+.navBarMenu {
+  font-size: 24px;
+  height: 100%;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  font-family: 'Prompt';
+}
+

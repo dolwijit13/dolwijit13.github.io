@@ -1,9 +1,19 @@
 {
   "compilerOptions": {
+    "lib": [
+      "es2015",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "target": "es6",
     "jsx": "react-jsx",
     "module": "commonjs",
+    "moduleResolution": "node",
     "types": [
       "bun-types"
     ]
-  }
+  },
+  "include": [
+    "./src/**/*"
+  ]
 }
