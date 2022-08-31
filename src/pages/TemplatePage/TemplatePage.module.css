@@ -5,7 +5,14 @@
 
 .templateLeftChild {
   width: 34vw;
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+
+.templateLeftChild > img {
+  width: 20vw;
+  height: auto;
+  object-fit: contain;
 }
 
 .templateRightChild {
