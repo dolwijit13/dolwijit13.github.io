@@ -1,0 +1,15 @@
+.buttonBackground {
+  border-radius: 8px;
+  background-color: #FFB800;
+  font-size: 16px;
+  height: 64px;
+  padding: 0 16px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.buttonBackground:hover {
+  background-color: #DCB52C;
+}
