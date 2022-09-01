@@ -15,7 +15,7 @@ const HomePage = (props, ref) => {
         leftColor="rgba(241, 139, 4, 0.6)"
         leftImage={<img src={DogSanpoMan} alt="image" />}
       >
-        <div>
+        <div className={styles.homePageContent}>
           <Profile />
           <TechStacks />
         </div>
