@@ -31,7 +31,7 @@ const TeachStacks = () => {
           <img src={googleCloud} width={40} data-tip={'Google Cloud Platform'} data-offset="{'top': 10, 'left': 10}" />
           <img src={redis} data-tip={'Redis'} />
       </div>
-      <ReactTooltip effect="solid" offset={{top: -10, left: 5}} scrollHide globalEventOff="click" />
+      <ReactTooltip effect="solid" offset={{top: -10, left: 5}} />
     </div>
   );
 };
