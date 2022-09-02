@@ -2,7 +2,7 @@
 import styles from "./TemplatePage.module.css";
 
 const TemplatePage = (props) => {
-  const { children, idx = 0 } = props;
+  const { children, leftColor, leftImage, idx = 0 } = props;
 
   // const [scale, setScale] = useState(1);
 
@@ -25,8 +25,8 @@ const TemplatePage = (props) => {
       // }}
       className={styles.templateBackground}
     >
-      <div className={styles.templateLeftChild}>
-        test
+      <div className={styles.templateLeftChild} style={{ backgroundColor: leftColor }}>
+        {leftImage}
       </div>
       <div className={styles.templateRightChild}>
         {children}
