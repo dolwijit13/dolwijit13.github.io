@@ -35,6 +35,15 @@
   color: #6F6F6F;
 }
 
+.profileResumeWrapper {
+  width: fit-content;
+}
+
+.profileResume {
+  color: black;
+  text-decoration: none;
+}
+
 .techStacksBackground {
   margin-top: 64px;
 }

@@ -1,5 +1,6 @@
 import Button from '../../../../components/Button';
 import styles from '../../HomePage.module.css';
+import resume from './Resume_Dolwijit.pdf';
 
 const Profile = () => {
   return (
@@ -14,9 +15,13 @@ const Profile = () => {
         desires to learn new things. Currently learning Japanese,
         have passed the JLPT N2, and am looking for work there.
       </div>
-      <Button>
-        DOWNLOAD RESUME
-      </Button>
+      <div className={styles.profileResumeWrapper}>
+        <a href={resume} download="Resume_Dolwijit.pdf" className={styles.profileResume}>
+          <Button>
+            DOWNLOAD RESUME
+          </Button>
+        </a>
+      </div>
     </div>
   );
 };
