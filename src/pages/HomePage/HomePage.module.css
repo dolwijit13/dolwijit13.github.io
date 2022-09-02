@@ -3,10 +3,6 @@
   width: 100vw;
 }
 
-.homePageText {
-  font-size: 128px;
-}
-
 .homePageContent {
   display: flex;
   flex-direction: column;
