@@ -1,14 +1,16 @@
 import styles from '../../ExperiencesPage.module.css';
 
 const ExperienceCard = (props) => {
-  const { logo, yearText, title, place, description } = props;
+  const { logo, logoColor, yearText, title, place, description } = props;
   return (
-    <div>
-      <div>
-        <img src={logo} alt={title} />
-        <span>{yearText}</span>
+    <div className={styles.experienceCardBackground}>
+      <div className={styles.experienceCardLeft} style={{ backgroundColor: logoColor }}>
+        <div className={styles.experienceCardLogoWrapper}>
+          <img src={logo} alt={title} />
+        </div>
+        <span className={styles.experienceCardYearText}>{yearText}</span>
       </div>
-      <div>
+      <div className={styles.experienceCardRight}>
         <div>{title}</div>
         <div>{place}</div>
         <div>{description}</div>
