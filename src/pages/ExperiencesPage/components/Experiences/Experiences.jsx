@@ -13,12 +13,12 @@ const Experiences = () => {
         yearText={'2021 - Present'}
         title={'Full-stack Developer'}
         place={'at Data Wow Co., Ltd.'}
-        description={`
-          Creating file management platform
-          Creating event management platform
-          Participated in chat storage platform
-          Participated in online-based learning platform
-        `}
+        descriptions={[
+          'Creating file management platform',
+          'Creating event management platform',
+          'Participated in chat storage platform',
+          'Participated in online-based learning platform'
+        ]}
       />
       <ExperienceCard
         logo={bsdEducation}
@@ -26,9 +26,9 @@ const Experiences = () => {
         yearText={'2020'}
         title={'Internship Front-end Developer'}
         place={'at BSD Education'}
-        description={`
-          Participated in online-based learning platform
-        `}
+        descriptions={[
+          'Participated in online-based learning platform'
+        ]}
       />
     </div>
   );

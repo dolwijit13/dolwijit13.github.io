@@ -1,5 +1,5 @@
 .experiencesPageBackground {
-  height: calc(100vh - 96px);
+  min-height: calc(100vh - 96px);
   width: 100vw;
 }
 
@@ -11,6 +11,7 @@
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 16vh;
 }
 
 .experiencesPageTitle {
@@ -22,6 +23,7 @@
   border-radius: 8px;
   border: 1px solid #949494;
   display: flex;
+  margin-top: 16px;
 }
 
 .experienceCardLeft {
@@ -49,4 +51,28 @@
 
 .experienceCardRight {
   width: 80%;
+  padding: 24px;
+}
+
+.experienceCardPosition {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.experienceCardPlace {
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.experienceCardDescription {
+  font-size: 16px;
+  color: #4A4A4A;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.educationTitle {
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 5vh;
 }
