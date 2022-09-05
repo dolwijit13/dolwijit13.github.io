@@ -1,12 +1,12 @@
 import { useRef } from 'react';
 import styles from "./App.module.css";
 import NavBar from "./components/NavBar";
-import EducationPage from "./pages/EducationPage";
+import ExperiencesPage from "./pages/ExperiencesPage";
 import HomePage from "./pages/HomePage";
 
 function App() {
   const refHome = useRef(null);
-  const refEducation = useRef(null);
+  const refExperiences = useRef(null);
   const refHome2 = useRef(null);
 
   const handleClickHome = () => {
@@ -14,8 +14,8 @@ function App() {
     window.scrollTo({ top: offsetTop, behavior: 'smooth' });
   };
 
-  const handleClickEducation = () => {
-    const offsetTop = refEducation.current.offsetTop - 96;
+  const handleClickExperiences = () => {
+    const offsetTop = refExperiences.current.offsetTop - 96;
     window.scrollTo({ top: offsetTop, behavior: 'smooth' });
   };
 
@@ -26,7 +26,7 @@ function App() {
 
   const menus = [
     { label: 'Home', onClick: handleClickHome },
-    { label: 'Experiences', onClick: handleClickEducation },
+    { label: 'Experiences', onClick: handleClickExperiences },
     { label: 'Contact me', onClick: handleClickHome2 },
   ];
 
@@ -36,7 +36,7 @@ function App() {
       <NavBar menus={menus} />
       <div className={styles.appContent}>
         <HomePage idx={0} ref={refHome} />
-        <EducationPage idx={1} ref={refEducation} />
+        <ExperiencesPage idx={1} ref={refExperiences} />
         <HomePage idx={2} ref={refHome2} />
       </div>
     </div>

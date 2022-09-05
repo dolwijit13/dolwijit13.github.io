@@ -3,15 +3,11 @@
   width: 100vw;
 }
 
-.homePageText {
-  font-size: 128px;
-}
-
 .homePageContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  height: calc(100vh - 96px);
   width: 60%;
   margin-left: auto;
   margin-right: auto;
