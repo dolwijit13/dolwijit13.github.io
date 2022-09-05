@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import styles from "./App.module.css";
 import NavBar from "./components/NavBar";
+import ContactMePage from './pages/ContactMePage';
 import ExperiencesPage from "./pages/ExperiencesPage";
 import HomePage from "./pages/HomePage";
 
@@ -37,7 +38,7 @@ function App() {
       <div className={styles.appContent}>
         <HomePage idx={0} ref={refHome} />
         <ExperiencesPage idx={1} ref={refExperiences} />
-        <HomePage idx={2} ref={refHome2} />
+        <ContactMePage idx={2} ref={refHome2} />
       </div>
     </div>
   );

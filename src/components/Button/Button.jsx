@@ -1,8 +1,16 @@
 import styles from './Button.module.css'
 
 const Button = (props) => {
-  const { children } = props
-  return <div className={styles.buttonBackground}>{children}</div>;
+  const { type = "text", disabled = false, children } = props
+  return (
+    <button
+      type={type}
+      disabled={disabled}
+      className={styles.buttonBackground}
+    >
+      {children}
+    </button>
+  );
 };
 
 export default Button;

@@ -1,0 +1,14 @@
+.contactMePageBackground {
+  height: calc(100vh - 96px);
+  width: 100vw;
+}
+
+.contactMePageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 96px);
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
