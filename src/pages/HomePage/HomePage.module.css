@@ -31,8 +31,11 @@
   color: #6F6F6F;
 }
 
-.profileResumeWrapper {
+.profileButtonsWrapper {
   width: fit-content;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 24px;
 }
 
 .profileResume {

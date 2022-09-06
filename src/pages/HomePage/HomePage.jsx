@@ -6,7 +6,7 @@ import Profile from './components/Profile';
 import TechStacks from './components/TechStacks';
 
 const HomePage = (props, ref) => {
-  const { idx } = props;
+  const { idx, handleClickContactMe } = props;
 
   return (
     <div className={styles.homePageBackground} ref={ref}>
@@ -16,7 +16,7 @@ const HomePage = (props, ref) => {
         leftImage={<img src={DogSanpoMan} alt="image" />}
       >
         <div className={styles.homePageContent}>
-          <Profile />
+          <Profile handleClickContactMe={handleClickContactMe} />
           <TechStacks />
         </div>
       </TemplatePage>
