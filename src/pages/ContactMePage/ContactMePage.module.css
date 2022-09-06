@@ -12,3 +12,64 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.contactFormTitle {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 4vh;
+}
+
+.contactFormInput {
+  width: calc(100% - 26px);
+  border-radius: 8px;
+  border: 1px solid #949494;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  max-width: calc(100% - 26px);
+  min-width: calc(100% - 26px);
+  font-size: 16px;
+}
+
+.contactFormTextArea {
+  width: calc(100% - 26px);
+  border-radius: 8px;
+  border: 1px solid #949494;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  max-width: calc(100% - 26px);
+  min-width: calc(100% - 26px);
+  font-size: 16px;
+  height: 16vh;
+  min-height: 16px;
+  max-height: 40vh;
+  margin-top: 16px;
+}
+
+.contactFormButton {
+  width: 100%;
+  margin-top: 16px;
+  background-color: #D98A83;
+  font-size: 14px;
+  height: 56px;
+}
+
+.contactFormButton:hover {
+  background-color: #C75F55;
+}
+
+.contactFormSuccessWrapper {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.contactFormSuccessTextWrapper {
+  border-radius: 8px;
+  border: 1px solid #949494;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 24px;
+  width: fit-content;
+  padding: 0 64px;
+}

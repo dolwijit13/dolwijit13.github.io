@@ -1,41 +1,47 @@
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import Button from '../../../../components/Button';
 import styles from '../../ContactMePage.module.css';
+import JitenshaInu from '../../jitensha-inu.png';
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("xjvzkjdb");
-  console.log(state)
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return (
+        <div className={styles.profileBackground}>
+          <div className={styles.contactFormTitle}>Contact me</div>
+          <div className={styles.contactFormSuccessWrapper}>
+            <div className={styles.contactFormSuccessTextWrapper}>
+              <p>Thank you for your message.</p>
+              <p>I will respond as soon as possible!</p>
+            </div>
+            <img src={JitenshaInu} alt={'dog-ride-bicycle'} width={'50%'} />
+          </div>
+        </div>
+      );
   }
   return (
     <div className={styles.profileBackground}>
-      <div>Contact me</div>
+      <div className={styles.contactFormTitle}>Contact me</div>
       <form onSubmit={handleSubmit}>
-      <label htmlFor="email">
-        Email Address
-      </label>
-      <input
-        id="email"
-        type="email"
-        name="email"
-      />
-      <ValidationError
-        prefix="Email"
-        field="email"
-        errors={state.errors}
-      />
-      <textarea
-        id="message"
-        name="message"
-      />
-      <ValidationError
-        prefix="Message"
-        field="message"
-        errors={state.errors}
-      />
-      <Button type="submit" disabled={state.submitting}>Send</Button>
-    </form>
+        <div>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Your email"
+            required
+            className={styles.contactFormInput}
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message"
+            required
+            className={styles.contactFormTextArea}
+          />
+          <Button type="submit" disabled={state.submitting} className={styles.contactFormButton}>Send</Button>
+        </div>
+      </form>
     </div>
   );
 };
