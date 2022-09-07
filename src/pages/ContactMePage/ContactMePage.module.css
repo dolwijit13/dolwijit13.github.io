@@ -46,15 +46,15 @@
 }
 
 .contactFormButton {
-  width: 100%;
-  margin-top: 16px;
-  background-color: #D98A83;
-  font-size: 14px;
-  height: 56px;
+  width: 100% !important;
+  margin-top: 16px !important;
+  background-color: #D98A83 !important;
+  font-size: 14px !important;
+  height: 56px !important;
 }
 
 .contactFormButton:hover {
-  background-color: #C75F55;
+  background-color: #C75F55 !important;
 }
 
 .contactFormSuccessWrapper {

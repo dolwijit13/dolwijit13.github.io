@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import styles from './Button.module.css'
 
 const Button = (props) => {
@@ -7,7 +8,7 @@ const Button = (props) => {
       type={type}
       disabled={disabled}
       onClick={onClick}
-      className={`${styles.buttonBackground} ${className}`}
+      className={classNames(styles.buttonBackground, className)}
     >
       {children}
     </button>
