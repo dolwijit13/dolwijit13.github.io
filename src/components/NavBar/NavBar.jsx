@@ -4,9 +4,15 @@ import { Menu as Hamburger, X } from 'react-feather';
 import styles from "./NavBar.module.css";
 
 const Menu = (props) => {
-  const { menu: { label, onClick } } = props;
+  const { menu: { label, onClick }, handleCloseMobileMenu } = props;
+
+  const handleClick = () => {
+    onClick();
+    handleCloseMobileMenu && handleCloseMobileMenu();
+  }
+
   return (
-    <div className={styles.navBarMenu} onClick={onClick}>
+    <div className={styles.navBarMenu} onClick={handleClick}>
       {label}
     </div>
   );
@@ -36,7 +42,13 @@ const NavBar = (props) => {
           onClick={() => setOnClickHamburger(false)}
         />
         <div className={styles.navBarMenuWrapperMobile}>
-          {menus.map((menu, idx) => <Menu key={idx} menu={menu} />)}
+          {menus.map((menu, idx) => (
+            <Menu
+              key={idx}
+              menu={menu}
+              handleCloseMobileMenu={() => setOnClickHamburger(false)}
+            />
+          ))}
         </div>
       </div>
     </nav>
