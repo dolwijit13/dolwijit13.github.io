@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { useMediaQuery } from 'react-responsive'
+import { Menu as Hamburger, X } from 'react-feather';
 import styles from "./NavBar.module.css";
 
 const Menu = (props) => {
@@ -11,11 +14,32 @@ const Menu = (props) => {
 
 const NavBar = (props) => {
   const { menus } = props;
+  const [onClickHamburger, setOnClickHamburger] = useState(false);
+  const isDesktop = useMediaQuery({ minWidth: 767 })
 
-  return (
-    <div className={styles.navBarBackground}>
+  return isDesktop ? (
+    <nav className={styles.navBarBackground}>
       {menus.map((menu, idx) => <Menu key={idx} menu={menu} />)}
-    </div>
+    </nav>
+  ) : (
+    <nav className={styles.navBarBackgroundMobile}>
+      <Hamburger
+        className={styles.navBarHamburger}
+        width={28}
+        height={28}
+        onClick={() => setOnClickHamburger(true)}
+      />
+      <div className={onClickHamburger ? styles.navBarOnShowMenuMobile : styles.navBarHideMenuMobile}>
+        <X
+          width={28}
+          height={28}
+          onClick={() => setOnClickHamburger(false)}
+        />
+        <div className={styles.navBarMenuWrapperMobile}>
+          {menus.map((menu, idx) => <Menu key={idx} menu={menu} />)}
+        </div>
+      </div>
+    </nav>
   );
 };
 
