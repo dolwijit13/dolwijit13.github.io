@@ -20,7 +20,7 @@ const Profile = (props) => {
         <div className={isDesktop ? styles.profileDescription : styles.profileDescriptionMobile}>
           A full-stack developer from Thailand who is self-motivated and
           desires to learn new things. Currently learning Japanese,
-          have passed the JLPT N2, and I am looking for work there.
+          have passed the JLPT N2, and I am looking for an opportunity to work there.
         </div>
         <div className={styles.profileButtonsWrapper}>
           <a href={resume} download="Resume_Dolwijit.pdf" className={styles.profileResume}>
