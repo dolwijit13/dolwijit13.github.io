@@ -1,12 +1,17 @@
+import { useMediaQuery } from 'react-responsive'
 import ExperienceCard from '../ExperienceCard';
 import styles from '../../ExperiencesPage.module.css';
 import dataWow from './dataWow.png';
 import bsdEducation from './bsdEducation.png';
 
 const Experiences = () => {
+  const isDesktop = useMediaQuery({ minWidth: 1224 })
+
   return (
-    <div>
-      <div className={styles.experiencesPageTitle}>Experiences</div>
+    <>
+      <div className={isDesktop ? styles.experiencesPageTitle : styles.experiencesPageTitleMobile}>
+        Experiences
+      </div>
       <ExperienceCard
         logo={dataWow}
         logoColor={'#46D7CE'}
@@ -30,7 +35,7 @@ const Experiences = () => {
           'Participated in online-based learning platform'
         ]}
       />
-    </div>
+    </>
   );
 };
 

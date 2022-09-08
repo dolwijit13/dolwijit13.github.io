@@ -1,12 +1,15 @@
+import { useMediaQuery } from 'react-responsive';
 import ExperienceCard from '../ExperienceCard';
 import styles from '../../ExperiencesPage.module.css';
 import chula from './chula.png';
 import suankularb from './suankularb.png';
 
 const Educations = () => {
+  const isDesktop = useMediaQuery({ minWidth: 1224 });
+
   return (
     <div>
-      <div className={styles.educationTitle}>Educations</div>
+      <div className={isDesktop ? styles.educationTitle : styles.educationTitleMobile}>Educations</div>
       <ExperienceCard
         logo={chula}
         logoColor={'#DE5C8E'}

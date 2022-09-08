@@ -32,7 +32,7 @@ const TemplatePage = (props) => {
       // style={{
       //   transform: `scale(${scale})`,
       // }}
-      className={styles.templateBackground}
+      className={isDesktop ? styles.templateBackground : styles.templateBackgroundMobile}
     >
       <Desktop>
         <div className={styles.templateLeftChild} style={{ backgroundColor: leftColor }}>
