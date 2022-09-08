@@ -5,3 +5,7 @@
 .appContent {
   margin-top: 96px;
 }
+
+.appContentMobile {
+  margin-top: 64px;
+}

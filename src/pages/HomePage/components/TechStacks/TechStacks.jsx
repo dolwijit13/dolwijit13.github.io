@@ -1,3 +1,4 @@
+import { useMediaQuery } from 'react-responsive'
 import js from "./icons/js.png";
 import python from "./icons/python.png";
 import nodejs from "./icons/nodejs.png";
@@ -14,22 +15,24 @@ import ReactTooltip from 'react-tooltip';
 import styles from '../../HomePage.module.css';
 
 const TeachStacks = () => {
+  const isDesktop = useMediaQuery({ minWidth: 1224 })
+
   return (
-    <div className={styles.techStacksBackground}>
+    <div className={isDesktop ? styles.techStacksBackground : styles.techStacksBackgroundMobile}>
       <div className={styles.techStacksTitle}>Tech stacks</div>
-      <div className={styles.techStacksContent}>
-          <img src={js} data-tip={'JavaScript'} />
-          <img src={python} data-tip={'Python'} />
-          <img src={nodejs} data-tip={'Node.js'} />
-          <img src={rails} data-tip={'Ruby on Rails'} />
-          <img src={reactjs} data-tip={'React.js'} />
-          <img src={tailwind} data-tip={'Tailwind'} />
-          <img src={graphql} data-tip={'GraphQL'} />
-          <img src={docker} data-tip={'Docker'} />
-          <img src={kubernetes} data-tip={'Kubernetes'} data-offset="{'top': 8, 'left': 8}" />
-          <img src={aws} data-tip={'AWS'} />
-          <img src={googleCloud} width={40} data-tip={'Google Cloud Platform'} data-offset="{'top': 10, 'left': 10}" />
-          <img src={redis} data-tip={'Redis'} />
+      <div className={isDesktop ? styles.techStacksContent : styles.techStacksContentMobile}>
+          <img src={js} width={!isDesktop && 80} data-tip={'JavaScript'} />
+          <img src={python} width={!isDesktop && 80} data-tip={'Python'} />
+          <img src={nodejs} width={!isDesktop && 80} data-tip={'Node.js'} />
+          <img src={rails} width={!isDesktop && 80} data-tip={'Ruby on Rails'} />
+          <img src={reactjs} width={!isDesktop && 80} data-tip={'React.js'} />
+          <img src={tailwind} width={!isDesktop && 80} data-tip={'Tailwind'} />
+          <img src={graphql} width={!isDesktop && 72} data-tip={'GraphQL'} />
+          <img src={docker} width={!isDesktop && 72} data-tip={'Docker'} />
+          <img src={kubernetes} width={!isDesktop && 40} data-tip={'Kubernetes'} data-offset="{'top': 8, 'left': 8}" />
+          <img src={aws} width={!isDesktop && 72} data-tip={'AWS'} />
+          <img src={googleCloud} width={isDesktop ? 44 : 40} data-tip={'Google Cloud Platform'} data-offset="{'top': 10, 'left': 10}" />
+          <img src={redis} width={!isDesktop && 72} data-tip={'Redis'} />
       </div>
       <ReactTooltip effect="solid" offset={{top: -10, left: 5}} />
     </div>

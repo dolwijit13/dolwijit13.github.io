@@ -16,6 +16,14 @@
   background: white;
 }
 
+.footerText {
+  font-size: 16px;
+}
+
+.footerTextMobile {
+  font-size: 14px;
+}
+
 .footerIcon {
   cursor: pointer;
 }

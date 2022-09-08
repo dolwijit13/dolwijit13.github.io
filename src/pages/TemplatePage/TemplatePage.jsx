@@ -1,4 +1,5 @@
 // import { useEffect, useState } from "react";
+import { useMediaQuery } from 'react-responsive'
 import styles from "./TemplatePage.module.css";
 
 const TemplatePage = (props) => {
@@ -18,19 +19,32 @@ const TemplatePage = (props) => {
   //   setScale(logoHeight / 400);
   // }
 
+  const isDesktop = useMediaQuery({ minWidth: 1224 })
+  const Desktop = ({ children }) => {
+    return isDesktop ? children : null
+  }
+  const Mobile = ({ children }) => {
+    return !isDesktop ? children : null
+  }
+
   return (
     <div
       // style={{
       //   transform: `scale(${scale})`,
       // }}
-      className={styles.templateBackground}
+      className={isDesktop ? styles.templateBackground : styles.templateBackgroundMobile}
     >
-      <div className={styles.templateLeftChild} style={{ backgroundColor: leftColor }}>
-        {leftImage}
-      </div>
-      <div className={styles.templateRightChild}>
+      <Desktop>
+        <div className={styles.templateLeftChild} style={{ backgroundColor: leftColor }}>
+          {leftImage}
+        </div>
+        <div className={styles.templateRightChild}>
+          {children}
+        </div>
+      </Desktop>
+      <Mobile>
         {children}
-      </div>
+      </Mobile>
     </div>
   );
 };

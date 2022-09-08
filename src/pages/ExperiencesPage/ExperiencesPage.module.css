@@ -3,6 +3,11 @@
   width: 100vw;
 }
 
+.experiencesPageBackgroundMobile {
+  width: 100vw;
+  background-color: #4EAA7A;
+}
+
 .experiencesPageContent {
   display: flex;
   flex-direction: column;
@@ -14,9 +19,28 @@
   margin-bottom: 16vh;
 }
 
+.experiencesPageContentMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8vh;
+}
+
 .experiencesPageTitle {
   font-size: 48px;
   font-weight: 600;
+}
+
+.experiencesPageTitleMobile {
+  font-size: 32px;
+  font-weight: 600;
+  background-color: rgba(255, 255 ,255, 0.9);
+  margin-top: 48px;
+  padding: 8px 0 8px 16px;
 }
 
 .experienceCardBackground {
@@ -26,12 +50,26 @@
   margin-top: 16px;
 }
 
+.experienceCardBackgroundMobile {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
 .experienceCardLeft {
   width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.experienceCardTopMobile {
+  display: flex;
+  align-items: center;
+  padding: 16px 32px;
 }
 
 .experienceCardLogoWrapper {
@@ -45,8 +83,25 @@
   align-items: center;
 }
 
+.experienceCardLogoWrapperMobile {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .experienceCardYearText {
   margin-top: 12px;
+}
+
+.experienceCardYearTextMobile {
+  margin-left: 32px;
+  font-weight: 600;
+  color: #4A4A4A;
 }
 
 .experienceCardRight {
@@ -54,13 +109,28 @@
   padding: 24px;
 }
 
+.experienceCardBottomMobile {
+  padding: 24px;
+  background-color: white;
+}
+
 .experienceCardPosition {
   font-size: 24px;
   font-weight: 600;
 }
 
+.experienceCardPositionMobile {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .experienceCardPlace {
   font-size: 20px;
+  margin-top: 2px;
+}
+
+.experienceCardPlaceMobile {
+  font-size: 16px;
   margin-top: 2px;
 }
 
@@ -71,8 +141,33 @@
   margin-top: 8px;
 }
 
+.experienceCardDescriptionMobile {
+  font-size: 14px;
+  color: #4A4A4A;
+  margin: 0;
+  margin-top: 8px;
+}
+
 .educationTitle {
   font-size: 48px;
   font-weight: 600;
   margin-top: 5vh;
+}
+
+.educationTitleMobile {
+  font-size: 32px;
+  font-weight: 600;
+  background-color: rgba(0, 0 ,0, 0.9);
+  margin-top: 48px;
+  padding: 8px 16px 8px 0;
+  text-align: end;
+  color: white;
+}
+
+.experiencesPageFooterMobile {
+  width: 100%;
+  background-color: white;
+  padding: 24px 0;
+  text-align: center;
+  margin-top: 24px;
 }

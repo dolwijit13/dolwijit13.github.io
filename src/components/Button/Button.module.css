@@ -11,6 +11,10 @@
   cursor: pointer;
 }
 
+.buttonBackgroundMobile {
+  font-size: 14px;
+}
+
 .buttonBackground:hover {
   background-color: #DCB52C;
 }

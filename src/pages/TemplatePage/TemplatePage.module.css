@@ -3,6 +3,12 @@
   min-height: 100%;
 }
 
+.templateBackgroundMobile {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 .templateLeftChild {
   width: 34vw;
   display: flex;
