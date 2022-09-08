@@ -3,6 +3,11 @@
   width: 100vw;
 }
 
+.contactMePageBackgroundMobile {
+  width: 100vw;
+  margin-bottom: 16vh;
+}
+
 .contactMePageContent {
   display: flex;
   flex-direction: column;
@@ -13,10 +18,31 @@
   margin-right: auto;
 }
 
+.contactMePageContentMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .contactFormTitle {
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 4vh;
+}
+
+.contactFormTitleMobile {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  background-color: #CF4647;
+  padding: 32px 10vw;
+}
+
+.contactFormMobile {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
 }
 
 .contactFormInput {
@@ -39,15 +65,15 @@
   max-width: calc(100% - 26px);
   min-width: calc(100% - 26px);
   font-size: 16px;
-  height: 16vh;
+  height: 24vh;
   min-height: 16px;
   max-height: 40vh;
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
 .contactFormButton {
   width: 100% !important;
-  margin-top: 16px !important;
+  margin-top: 24px !important;
   background-color: #D98A83 !important;
   font-size: 14px !important;
   height: 56px !important;
