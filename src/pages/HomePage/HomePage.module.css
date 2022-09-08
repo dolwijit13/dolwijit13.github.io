@@ -3,6 +3,10 @@
   width: 100vw;
 }
 
+.homePageBackgroundMobile {
+  width: 100vw;
+}
+
 .homePageContent {
   display: flex;
   flex-direction: column;
@@ -13,6 +17,15 @@
   margin-right: auto;
 }
 
+.homePageContentMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .profileBackground {
 }
 
@@ -21,13 +34,37 @@
   font-weight: 600;
 }
 
+.profileHelloMobile {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  background-color: #F18E04;
+  padding: 32px 10vw;
+}
+
 .profileHelloJap {
   font-size: 36px;
+}
+
+.profileHelloJapMobile {
+  font-size: 24px;
+}
+
+.profileDescriptionWrapperMobile {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .profileDescription {
   margin: 48px 0;
   font-size: 24px;
+  color: #6F6F6F;
+}
+
+.profileDescriptionMobile {
+  margin: 48px 0;
+  font-size: 16px;
   color: #6F6F6F;
 }
 
@@ -47,6 +84,13 @@
   margin-top: 64px;
 }
 
+.techStacksBackgroundMobile {
+  margin-top: 48px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .techStacksTitle {
   font-size: 24px;
   font-weight: 600;
@@ -59,4 +103,21 @@
   grid-template-columns: repeat(6, auto);
   justify-items: center;
   align-items: center;
+}
+
+.techStacksContentMobile {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  row-gap: 8px;
+  justify-items: center;
+  align-items: center;
+}
+
+.homePageFooterMobile {
+  width: 100%;
+  background-color: #F18E04;
+  padding: 24px 0;
+  text-align: center;
+  margin-top: 24px;
 }

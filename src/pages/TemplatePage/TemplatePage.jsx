@@ -19,13 +19,12 @@ const TemplatePage = (props) => {
   //   setScale(logoHeight / 400);
   // }
 
+  const isDesktop = useMediaQuery({ minWidth: 1224 })
   const Desktop = ({ children }) => {
-    const isDesktop = useMediaQuery({ minWidth: 767 })
     return isDesktop ? children : null
   }
   const Mobile = ({ children }) => {
-    const isMobile = useMediaQuery({ maxWidth: 767 })
-    return isMobile ? children : null
+    return !isDesktop ? children : null
   }
 
   return (

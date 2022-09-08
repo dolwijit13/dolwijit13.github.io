@@ -21,7 +21,7 @@ const Menu = (props) => {
 const NavBar = (props) => {
   const { menus } = props;
   const [onClickHamburger, setOnClickHamburger] = useState(false);
-  const isDesktop = useMediaQuery({ minWidth: 767 })
+  const isDesktop = useMediaQuery({ minWidth: 1224 })
 
   return isDesktop ? (
     <nav className={styles.navBarBackground}>
